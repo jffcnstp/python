@@ -1,0 +1,31 @@
+1.
+	1. x[0][0]=15
+	2.students[0]["last_name"]="Bryant"
+	3.sportsdirectory[soccer][0]="Andres
+	4.z[0]["y"]=30
+
+2.
+def iterateDictionary(some_list):
+	for student in students:
+	print(student)
+
+3.
+def iterateDictionary2(key_name,some_list):
+	for student in students:
+		print(student[key_name]
+
+4.
+
+def printInfo(some_dict):
+	locations=len(some_dict["locations"])
+	instructors=len(some_dict["instructors"])
+	print(locations ," LOCATIONS")
+	for val in some_dict["locations"]:
+		print(val)
+	print(" ")
+	print(instructors," INSTRUCTORS")
+	for insVal in some_dict["instructors"]:
+		print(insVal)
+
+	
+

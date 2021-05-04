@@ -1,0 +1,19 @@
+pip list:  install list package
+
+deactivate: deactivate virtual environment
+
+pip3 list:it installs it systemwide instead of inside the environment
+
+call....etc: reactivate virtual env
+
+pip install Django:looks for the webhosted django package downloads the files and installs them
+
+pip freeze: freeze checks all the versions installed in a virtual environment
+
+pip freeze>requirements.txt: gets the output of pip freeze and writes it to requirements.txt
+
+pip uninstall Django: uninstalls the package from the environment
+
+pip show Django: show gets the version # and info about the package installed along with other information
+
+pip search Flask:looks for all packages available to install related to keyword Flask

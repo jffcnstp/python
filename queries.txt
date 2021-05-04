@@ -1,0 +1,29 @@
+>>> User.objects.create(first_name="Magic", age=20)
+<User: User object (1)>
+>>> User.objects.create(first_name="Loser", age=1)
+<User: User object (2)>
+>>> USer.objects.create(first_name="marker", age=0)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'USer' is not defined
+>>> User.objects.create(first_name="marker", age=0)
+<User: User object (3)>
+>>> Users.objects.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'Users' is not defined
+>>> User.objects.all()
+<QuerySet [<User: User object (1)>, <User: User object (2)>, <User: User object (3)>]>
+>>> User.objects.first()
+<User: User object (1)>
+>>> User.objects.last()
+<User: User object (3)>
+>>> congo=User.objects.get(id="3")
+>>> congo.last_name="Pancakes"
+>>> congo.save()
+>>> goodbye=User.objects.get(id="2")
+>>> goodbye.delete()
+(1, {'users_app.User': 1})
+>>> User.objects.all().order_by("first_name")
+<QuerySet [<User: User object (1)>, <User: User object (3)>]>
+>>>
